@@ -24,6 +24,16 @@ void bubble_sort(int *array, size_t size)
 				array[j + 1] = array[j];
 				array[j] = temp;
 				swap_elements = 1;
+
+				for (k = 0; k < size; k++)
+				{
+					printf("%d", array[k]);
+					if (k < size - 1)
+					{
+						printf(", ");
+					}
+				}
+				printf("\n");
 			}
 		}
 
@@ -31,16 +41,6 @@ void bubble_sort(int *array, size_t size)
 		{
 			break;
 		}
-
-		for (k = 0; k < size; k++)
-		{
-			printf("%d", array[k]);
-			if (k < size - 1)
-			{
-				printf(", ");
-			}
-		}
 	}
-
-	printf("\n");
 }
+
