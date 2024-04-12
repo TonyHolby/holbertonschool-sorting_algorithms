@@ -18,10 +18,6 @@ void bubble_sort(int *array, size_t size)
 
 		for (j = 0; j < size - i - 1; j++)
 		{
-			/**
-			 * if two integers are switched, swap_elements takes
-			 * the value 1.
-			 */
 			if (array[j] > array[j + 1])
 			{
 				temp = array[j + 1];
@@ -31,10 +27,6 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 
-		/**
-		 * if no integers are switched, the array is already sort and
-		 * the algorithme is stopped.
-		 */
 		if (swap_elements == 0)
 		{
 			break;
